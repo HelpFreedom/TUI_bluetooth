@@ -1,5 +1,5 @@
 # bluetui
-
+![Превью](https://raw.githubusercontent.com/HelpFreedom/TUI_bluetooth/refs/heads/main/ChatGPT%20Image%20May%202%2C%202026%2C%2009_52_01%20AM.png)
 Терминальный TUI-менеджер Bluetooth для Linux. Работает поверх **BlueZ** через системный **D-Bus**, без `sudo`.
 
 ```
