@@ -1,0 +1,32 @@
+/* Layout for the bluetui app. Most widget-local styles live in DEFAULT_CSS
+   on each widget; this file holds the screen-level composition. */
+
+/* Force every widget to use the terminal's default background.
+   `ansi_default` only honours terminal transparency when the App is
+   running with ansi_color=True (set in app.py). The wildcard rule with
+   !important defeats Textual's built-in widget styles (Header, Footer,
+   OptionList, etc.) that would otherwise paint black/grey backgrounds. */
+
+* {
+    background: ansi_default !important;
+}
+
+#main {
+    layout: vertical;
+    height: 1fr;
+    padding: 0;
+}
+
+Header {
+    color: $text;
+}
+
+OptionList > .option-list--option-highlighted {
+    background: ansi_blue !important;
+    color: ansi_default !important;
+}
+
+OptionList:focus > .option-list--option-highlighted {
+    background: ansi_bright_blue !important;
+    color: ansi_default !important;
+}

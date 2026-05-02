@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bluetui"
+version = "0.1.0"
+description = "Beautiful TUI for managing Bluetooth devices via BlueZ"
+requires-python = ">=3.9"
+dependencies = [
+    "textual>=2.0",
+    "dbus-next>=0.2.3",
+]
+
+[project.scripts]
+bluetui = "bluetui.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["bluetui*"]
+
+[tool.setuptools.package-data]
+bluetui = ["*.tcss"]
