@@ -65,7 +65,7 @@ dbus-next>=0.2.3
 ## Установка
 
 ```bash
-git clone https://github.com/<your-user>/bluetui.git
+git clone https://github.com/HelpFreedom/bluetui.git
 cd bluetui
 pip3 install --user -r requirements.txt
 ./bluetui.sh
